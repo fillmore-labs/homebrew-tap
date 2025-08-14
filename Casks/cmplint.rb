@@ -2,7 +2,7 @@
 cask "cmplint" do
   desc "cmplint is a Go static analysis tool (linter) that detects unnecessary or potentially incorrect usage of pointers to zero-sized types."
   homepage "https://github.com/fillmore-labs/cmplint"
-  version "0.0.4"
+  version "0.0.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,23 +15,23 @@ cask "cmplint" do
 
   on_macos do
     on_intel do
-      url "https://github.com/fillmore-labs/cmplint/releases/download/v0.0.4/cmplint_darwin_amd64.tar.gz"
-      sha256 "165c2eb6b136dcf3e45a08324114322acf39e773dbb8f38a752fb811999fb147"
+      url "https://github.com/fillmore-labs/cmplint/releases/download/v0.0.5/cmplint_darwin_amd64.tar.gz"
+      sha256 "57b0da8ae3ab21153fd1abc98ebd0581eebb2b714bc54340aec14f0b74bdfc83"
     end
     on_arm do
-      url "https://github.com/fillmore-labs/cmplint/releases/download/v0.0.4/cmplint_darwin_arm64.tar.gz"
-      sha256 "c616177faeff577c390f4d6c58be3a64532cae18d1d3c675acc4e2afe2afc27b"
+      url "https://github.com/fillmore-labs/cmplint/releases/download/v0.0.5/cmplint_darwin_arm64.tar.gz"
+      sha256 "84e0d6cbd8a6614187ea183f466483e2a66a49fe3ba6d2a14edc43b06e3fe985"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/fillmore-labs/cmplint/releases/download/v0.0.4/cmplint_linux_amd64.tar.gz"
-      sha256 "dcc36ea10838d41104fb8443b0924e611a59db4e47613a333e4cec44268512b4"
+      url "https://github.com/fillmore-labs/cmplint/releases/download/v0.0.5/cmplint_linux_amd64.tar.gz"
+      sha256 "6143c66710667208f0300321caa6569403f85aad27480a80c0c2cb661d979c4d"
     end
     on_arm do
-      url "https://github.com/fillmore-labs/cmplint/releases/download/v0.0.4/cmplint_linux_arm64.tar.gz"
-      sha256 "7d633af9099d973e55f952333e76038109c04f004cd5c73c80b2d73df441e608"
+      url "https://github.com/fillmore-labs/cmplint/releases/download/v0.0.5/cmplint_linux_arm64.tar.gz"
+      sha256 "285dd6e478b8a495e3a6dd0328b0abb55cd0d56ade4e726118be7ca134c2a1e3"
     end
   end
 
