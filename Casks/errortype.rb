@@ -2,7 +2,7 @@
 cask "errortype" do
   desc "errortype is a Go static analysis tool (linter) that detects inconsistent usage of custom error types as pointers versus values."
   homepage "https://github.com/fillmore-labs/errortype"
-  version "0.0.1"
+  version "0.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,23 +15,23 @@ cask "errortype" do
 
   on_macos do
     on_intel do
-      url "https://github.com/fillmore-labs/errortype/releases/download/v0.0.1/errortype_darwin_amd64.tar.gz"
-      sha256 "98e9c5646208336332373f38f6f4653e923296d1633920ba36faac101ced0c4a"
+      url "https://github.com/fillmore-labs/errortype/releases/download/v0.0.2/errortype_darwin_amd64.tar.gz"
+      sha256 "75b133372f86770e09ba3ca9f14ec0ce4787ca22e6e38806c459b3e63c64bf0c"
     end
     on_arm do
-      url "https://github.com/fillmore-labs/errortype/releases/download/v0.0.1/errortype_darwin_arm64.tar.gz"
-      sha256 "c6d92c537be9a6127ae4565041114d66afc07679bc8549306cfa787a8895b736"
+      url "https://github.com/fillmore-labs/errortype/releases/download/v0.0.2/errortype_darwin_arm64.tar.gz"
+      sha256 "b1ac403399d045efd1fc8bd512671f68354146b4b742812c2c23cbcd009849c6"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/fillmore-labs/errortype/releases/download/v0.0.1/errortype_linux_amd64.tar.gz"
-      sha256 "7e525b68497ecf1e458cdb2d42b2f4589046eecb83a60113a042214f96eec6ac"
+      url "https://github.com/fillmore-labs/errortype/releases/download/v0.0.2/errortype_linux_amd64.tar.gz"
+      sha256 "2cfd4ed086d9c8a6cd65cc76d6f1c3ea44763354030fb403eca686c8eb938fb7"
     end
     on_arm do
-      url "https://github.com/fillmore-labs/errortype/releases/download/v0.0.1/errortype_linux_arm64.tar.gz"
-      sha256 "a3213e7c8bed44fd51cf309527504b0fbce25529fce8050ec7bdcab52790e069"
+      url "https://github.com/fillmore-labs/errortype/releases/download/v0.0.2/errortype_linux_arm64.tar.gz"
+      sha256 "d9bd9f2ed26022d6c64110ff49c710bcff5c64daa8b7f4e5ed5808e02c2d7f34"
     end
   end
 
