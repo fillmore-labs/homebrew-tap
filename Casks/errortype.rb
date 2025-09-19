@@ -3,7 +3,7 @@ cask "errortype" do
   name "errortype"
   desc "errortype is a Go static analysis tool (linter) that detects inconsistent usage of custom error types as pointers versus values."
   homepage "https://github.com/fillmore-labs/errortype"
-  version "0.0.4"
+  version "0.0.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "errortype" do
   on_macos do
     on_intel do
       url "https://github.com/fillmore-labs/errortype/releases/download/v#{version}/errortype_darwin_amd64.tar.gz"
-      sha256 "953b05a264e279e59f628a40351d9c9efddde38e6caffed8c7c0fb67e5404349"
+      sha256 "31d69b403967341391e868e61b19eb558de5b2bcfa2e5330e65e3bf08337c5e4"
     end
     on_arm do
       url "https://github.com/fillmore-labs/errortype/releases/download/v#{version}/errortype_darwin_arm64.tar.gz"
-      sha256 "d77e0c4f8147a8c92ec6de74c6d375a1d1085ff9aaa5f2a1b140cca46165d1c6"
+      sha256 "345b37ddf1ed6da08c6d95010bc6d5bf5b7fd75b45109c179c7ebb2b4a322810"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/fillmore-labs/errortype/releases/download/v#{version}/errortype_linux_amd64.tar.gz"
-      sha256 "306c4583e3f41527b0d96c9e1f1813cbd711f988b2aa367fbfeae6cb2859f898"
+      sha256 "b3e484d36bcbc594a29346c0b8f24ef09d02594a744c0a525da133373bf89548"
     end
     on_arm do
       url "https://github.com/fillmore-labs/errortype/releases/download/v#{version}/errortype_linux_arm64.tar.gz"
-      sha256 "9474bdbda7bebeefe413e53ae7894cd3ab0c2b7d6ab6f99f9120f12bfcbd3554"
+      sha256 "88048139f0bcf1e26b466e797056901542976e93edc4e540e6fd268a6ee57b17"
     end
   end
 
