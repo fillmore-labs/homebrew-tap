@@ -3,7 +3,7 @@ cask "scopeguard" do
   name "scopeguard"
   desc "scopeguard Go static analyzer that identifies variables with unnecessarily wide scope and suggests moving them to tighter scopes."
   homepage "https://github.com/fillmore-labs/scopeguard"
-  version "0.0.2"
+  version "0.0.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,27 +17,27 @@ cask "scopeguard" do
   on_macos do
     on_intel do
       url "https://github.com/fillmore-labs/scopeguard/releases/download/v#{version}/scopeguard_darwin_amd64.tar.gz"
-      sha256 "c816253f633d5c08e5301b9d41aaf7e35f181b821bdec7733388238550b7542e"
+      sha256 "70a358d1daea16881589127a8e1b257dc0ff71a84d6830576693fb436dde3698"
     end
     on_arm do
       url "https://github.com/fillmore-labs/scopeguard/releases/download/v#{version}/scopeguard_darwin_arm64.tar.gz"
-      sha256 "64acdd02f371e096caad16748a5c4aeb00d0db5bd402ecb4bb0a241df7080f58"
+      sha256 "30235c806be120d10bca78073a8e384eb32fc2659e927aab3d5a8fc82f3b5ab5"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/fillmore-labs/scopeguard/releases/download/v#{version}/scopeguard_linux_amd64.tar.gz"
-      sha256 "043cc4d7979a4414ab174bebf6f93bf6c0dbce23f9cf50d86674f075bedece35"
+      sha256 "94e3855c5f1724a58b004484f0971784ee9c7c633b93e46bdf9b9d89a6972e93"
     end
     on_arm do
       url "https://github.com/fillmore-labs/scopeguard/releases/download/v#{version}/scopeguard_linux_arm64.tar.gz"
-      sha256 "017df47a5fc7d50f32ff8f6bef3b4e04946c7cdaa87e09a0dba69863c3175b95"
+      sha256 "b3bddf10f3c75732ac1c206d10f2d800573d2936edc617c6f3b810c145539cd0"
     end
   end
 
   postflight do
-    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
+    if OS.mac?
       system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{staged_path}/scopeguard"]
     end
   end
