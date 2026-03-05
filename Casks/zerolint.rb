@@ -3,7 +3,7 @@ cask "zerolint" do
   name "zerolint"
   desc "zerolint is a Go static analysis tool (linter) that detects unnecessary or potentially incorrect usage of pointers to zero-sized types."
   homepage "https://github.com/fillmore-labs/zerolint"
-  version "0.0.15"
+  version "0.0.16"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "zerolint" do
   on_macos do
     on_intel do
       url "https://github.com/fillmore-labs/zerolint/releases/download/v#{version}/zerolint_darwin_amd64.tar.gz"
-      sha256 "e2d247e1e80ad414bcdca917029c0d0e7534de04e793b5e7a578f8f6dd90bb9c"
+      sha256 "d816b9309af1217ae5eb16f3daec71bac2078a0221dfa2d444e7d81bfa0d3ecd"
     end
     on_arm do
       url "https://github.com/fillmore-labs/zerolint/releases/download/v#{version}/zerolint_darwin_arm64.tar.gz"
-      sha256 "5074c175e3442ddfa3eb88e07404d5d3d538c4ab7a682426f5d79ca67f8e14dd"
+      sha256 "298af773a27e25146c0a717b4e5ddbc5babfe034eb5392ece034b8c48c7835cd"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/fillmore-labs/zerolint/releases/download/v#{version}/zerolint_linux_amd64.tar.gz"
-      sha256 "bb4bbc16209c93bec6fa8d67dda38003c78e98ecb4c70fd556402cd4429c813e"
+      sha256 "b85b61f09be793661b0627c793476468ecf9c6ab737a8e7d7472b0cf18c408af"
     end
     on_arm do
       url "https://github.com/fillmore-labs/zerolint/releases/download/v#{version}/zerolint_linux_arm64.tar.gz"
-      sha256 "445e1d497d02639b792f068d863e3cd3dade2f9771222a7b102254e797e66251"
+      sha256 "cbb001b501f017a0413e9bd709855bbe6c583f323edb4c2d45bb1dec0fb6936f"
     end
   end
 
